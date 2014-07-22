@@ -3,6 +3,11 @@ same-origin
 
 Checks if two URLs pass the "same origin"-policy (RFC 6454)
 
+[![Build Status](https://travis-ci.org/rexxars/same-origin.svg?branch=master)](https://travis-ci.org/rexxars/same-origin)
+
+[![browser support](https://ci.testling.com/rexxars/same-origin.png)
+](https://ci.testling.com/rexxars/same-origin)
+
 Installation
 ============
 
