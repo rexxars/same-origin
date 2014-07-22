@@ -17,7 +17,7 @@ module.exports = {
         return {
             protocol: (match[1] || '').toLowerCase(),
             hostname: match[5].toLowerCase(),
-            port: match[6]
+            port: match[6] || undefined
         };
     }
 };
