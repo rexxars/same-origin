@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/tests.js|faucet",
-    "build": "browserify -g [uglifyify] index.js > dist/same-origin.min.js"
+    "build": "browserify -g [uglifyify] -s same-origin index.js > dist/same-origin.min.js"
   },
   "repository": {
     "type": "git",
