@@ -35,7 +35,7 @@ var tests = {
     '//www.example.com/dir/page.html': {
         testName: 'protocol-less',
 
-        protocol: '',
+        protocol: undefined,
         hostname: 'www.example.com',
         port: undefined
     },
@@ -62,6 +62,14 @@ var tests = {
         protocol: 'https:',
         hostname: 'espen.codes',
         port: '1337'
+    },
+
+    '/relative/url': {
+        testName: 'relative urls',
+
+        protocol: undefined,
+        hostname: undefined,
+        port: undefined
     }
 };
 

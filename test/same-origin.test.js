@@ -81,3 +81,19 @@ test(prefix + 'no protocol specified, different hostname', function(t) {
     t.notOk(sameOrigin(origin, target), 'no protocol, different hostname');
     t.end();
 });
+
+test(prefix + 'one relative (no protocol or hostname), one absolute url', function(t) {
+    var origin = 'http://www.example.com/dir/page.html',
+        target = '/dir/otherpage.json';
+
+    t.notOk(sameOrigin(origin, target), 'unknown protocol/host for url');
+    t.end();
+});
+
+test(prefix + 'relative (no protocol or hostname) urls', function(t) {
+    var origin = '/dir/page.html',
+        target = '/dir/otherpage.html';
+
+    t.ok(sameOrigin(origin, target), 'both relative urls');
+    t.end();
+});
